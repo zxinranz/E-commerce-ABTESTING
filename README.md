@@ -114,9 +114,8 @@ We would now like to look at an interaction between page and country to see if t
 
 The p_value for both interaction terms is higher than 0.05.
 
-Thus, the influence of landing_page in the US is not different to the influence of landing_page in the other countries. 
+Thus, the influence of landing_page in the US is not different to the influence of landing_page in the other countries. And the influence of landing_page in Canada is not different to the influence of landing_page in the other countries. 
 
-And the influence of landing_page in Canada is not different to the influence of landing_page in the other countries. 
 ## Conclusions
 
 In conclusion, there is not enough evidence that the new_page increases the conversion rate as compared to the old_page. This is based on the probability figures, A/B test and regression. Moreover,there is no strong evidence that the countries (US, CA and UK) influence the conversion rate. 
