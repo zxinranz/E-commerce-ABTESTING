@@ -30,11 +30,11 @@ A/B testing, also called split testing, is a method of determining which of two 
 - Remove the missing value
 - Remove duplicate values
 
-## Probability
+## Part I - Probability
 11.98% that received the old_page were converted. 11.88% that received the new_page were converted. In conclusion, the new_page did not increase the conversion rate. <br>
 There is not sufficient evidence to say that the new treatment page leads to more conversions.
 
-## PART I: A/B test
+## Part II - A/B test
 ### Difficulty:
 
 Notice that because of the time stamp associated with each event, you could technically run a hypothesis test continuously as each observation was observed.<br>  
