@@ -81,6 +81,7 @@ First, we need to add an **intercept column**. This column will contain a consta
 
 Second, we need to create a **dummy variable column** to represent which page each user received. We will create an **"ab_page" column**, which will be assigned a value of 1 if an individual received the treatment (new page) and 0 if they were in the control group (old page).<br>
 
+![](https://github.com/zxinranz/img-folder/blob/main/ab_logis.png)
 
 
 ## Conclusions
