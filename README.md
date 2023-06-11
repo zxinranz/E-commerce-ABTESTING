@@ -83,6 +83,7 @@ Second, we need to create a **dummy variable column** to represent which page ea
 
 ![](https://github.com/zxinranz/img-folder/blob/main/ab_logis.png)
 
+Use statsmodels to import regression model. Instantiate the model, and fit the model using the two columns created in part b. to predict whether or not an individual converts.
 
 ## Conclusions
 
