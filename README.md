@@ -53,8 +53,11 @@ Assume under the null hypothesis, $p_{new}$ and $p_{old}$ both have "true" succe
 
 Use a sample size for each page equal to the ones in **ab_data.csv**.  <br><br>
 Perform the sampling distribution for the difference in **converted** between the two pages over 10,000 iterations of calculating an estimate from the null.  <br><br>
-Then we get:
+Then we get:<br>
+![](https://github.com/zxinranz/img-folder/blob/main/p_diffs.jpg)
+To show that the proportion of the **p_diffs** are greater than the actual difference observed in **ab_data.csv**
 
+![]()
     
 ## Conclusions
 
