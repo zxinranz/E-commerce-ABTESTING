@@ -1,6 +1,7 @@
 # Data Insights for UI Change Evaluation
 
-We get data about users who enroll/visit a course page. Our goal is to come up with recommendations for the product and the marketing teams to implement the changes or not. We have a new UI change and we want to investigate whether to launch the change given the data below. For this, we decided to analyze in three directions: probability figures, A/B tests and regressions.
+We get data about users who enroll/visit a course page. Our goal is to come up with recommendations for the product and the marketing teams to implement the changes or not. We have a new UI change and we want to investigate whether to launch the change given the data below. For this, we decided to analyze in three directions: probability, A/B tests and regressions.
+We then found that the new page did not result in a significant increase in conversions, and we turned to consider whether national factors might affect conversions.
 
 Half of the population received the old_page and half of the population received the new_page. 
 
@@ -84,6 +85,24 @@ Second, we need to create a **dummy variable column** to represent which page ea
 ![](https://github.com/zxinranz/img-folder/blob/main/ab_logis.png)
 
 Use statsmodels to import regression model. Instantiate the model, and fit the model using the two columns created in part b. to predict whether or not an individual converts.
+
+![](https://github.com/zxinranz/img-folder/blob/main/logis_reg.png)
+
+Based on the provided regression analysis results, the following conclusions can be drawn:
+
+- We used a Logit regression model to predict conversion rate.
+- The number of observations in the sample is 290,584, which represents the total number of observations analyzed.
+- The model was fitted using the Maximum Likelihood Estimation (MLE) method.
+- The model has 1 degree of freedom for the model and 290,582 degrees of freedom for residuals.
+- The pseudo R-squared value is 8.077e-06, which is close to zero, indicating that the model has a weak explanatory power for the target variable.
+- The model has a good fit as indicated by the converged value of True, indicating that the model has converged.
+- The Log-Likelihood value is -1.0639e+05, which can be used to compare the goodness of fit among different models.
+- In terms of statistical significance testing, the intercept has a very small p-value (close to zero), indicating that the intercept term is significant in the model.
+- The coefficient for ab_page is -0.0150 with a p-value of 0.190, which is relatively large (greater than 0.05), suggesting that the ab_page variable is not statistically significant and does not have a significant relationship with the conversion rate.
+
+It is important to note that while the model fits the overall dataset well, **the coefficient and p-value for ab_page indicate that there is no significant relationship between ab_page and the conversion rate**. Therefore, further exploration of other variables or reconsideration of the model's construction may be necessary.
+
+Now along with testing if the conversion rate changes for different pages, also add an effect based on which country a user lives. 
 
 ## Conclusions
 
