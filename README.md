@@ -110,7 +110,7 @@ The country does not appear to have influence on the convertion rate. P-values f
 
 We would now like to look at an interaction between page and country to see if there significant effects on conversion.By looking at an interaction, I will explore whether the influence of the landing_page might work in the US but not in the other countries, or Canada but not in other countries. Or the other way around.
 
-![]()
+![](https://github.com/zxinranz/img-folder/blob/main/%E6%88%AA%E5%B1%8F2023-06-11%20%E4%B8%8B%E5%8D%884.27.51.png)
 
 The p_value for both interaction terms is higher than 0.05.
 
