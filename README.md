@@ -104,7 +104,19 @@ It is important to note that while the model fits the overall dataset well, **th
 
 Now along with testing if the conversion rate changes for different pages, also add an effect based on which country a user lives. 
 
+![](https://github.com/zxinranz/img-folder/blob/main/logis_countri.png)
 
+The country does not appear to have influence on the convertion rate. P-values for the two dummy country variables are above 0.05. Note the CA variable get closes to 0.05.<br>
+
+We would now like to look at an interaction between page and country to see if there significant effects on conversion.By looking at an interaction, I will explore whether the influence of the landing_page might work in the US but not in the other countries, or Canada but not in other countries. Or the other way around.
+
+![]()
+
+The p_value for both interaction terms is higher than 0.05.
+
+Thus, the influence of landing_page in the US is not different to the influence of landing_page in the other countries. 
+
+And the influence of landing_page in Canada is not different to the influence of landing_page in the other countries. 
 ## Conclusions
 
 In conclusion, there is not enough evidence that the new_page increases the conversion rate as compared to the old_page. This is based on the probability figures, A/B test and regression. Moreover,there is no strong evidence that the countries (US, CA and UK) influence the conversion rate. 
