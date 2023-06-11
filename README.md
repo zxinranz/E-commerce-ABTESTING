@@ -57,8 +57,32 @@ Then we get:<br>
 ![](https://github.com/zxinranz/img-folder/blob/main/p_diffs.jpg)
 To show that the proportion of the **p_diffs** are greater than the actual difference observed in **ab_data.csv**
 
-![]()
-    
+![](https://github.com/zxinranz/img-folder/blob/main/obs_diff.png)
+
+90.98% is the proportion of the p_diffs that are greater than the actual difference observed in ab_data.csv (**p-value**). This value means that **we cannot reject the null hypothesis and that we do not have sufficient evidence that the new_page has a higher conversion rate than the old_page.** 
+
+### Build-in function
+` import statsmodels.api as sm `<br>
+
+use `stats.proportions_ztest` to compute your test statistic and p-value.<br>
+
+z_score, p_value: (1.3109241984234394, 0.9050583127590245)<br>
+
+The z-score and the p_value mean that one doesn't reject the Null. The Null being the converted rate of the old_page is the same or greater than the converted rate of the new_page. The p_value is 0.91 and is higher than 0.05 significance level. That means we can not be confident with a 95% confidence level that the converted rate of the new_page is larger than the old_page.
+
+## Part III - A regression approach
+> Acheived in the previous A/B test can also be acheived by performing regression.
+
+Since each row represents either a conversion or no conversion, we should perform **logistic regression** in this case.
+
+Our goal is to use **statsmodels** to fit the regression model specified in part a to determine if there is a significant difference in conversion based on the page received by each customer. However, before fitting the model, we need to create two additional columns. <br>
+
+First, we need to add an **intercept column**. This column will contain a constant value of 1 for each observation in the dataset. It is necessary for the logistic regression model.<br>
+
+Second, we need to create a **dummy variable column** to represent which page each user received. We will create an **"ab_page" column**, which will be assigned a value of 1 if an individual received the treatment (new page) and 0 if they were in the control group (old page).<br>
+
+
+
 ## Conclusions
 
 In conclusion, there is not enough evidence that the new_page increases the conversion rate as compared to the old_page. This is based on the probability figures, A/B test and regression. Moreover,there is no strong evidence that the countries (US, CA and UK) influence the conversion rate. 
