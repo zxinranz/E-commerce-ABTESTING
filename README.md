@@ -104,6 +104,7 @@ It is important to note that while the model fits the overall dataset well, **th
 
 Now along with testing if the conversion rate changes for different pages, also add an effect based on which country a user lives. 
 
+
 ## Conclusions
 
 In conclusion, there is not enough evidence that the new_page increases the conversion rate as compared to the old_page. This is based on the probability figures, A/B test and regression. Moreover,there is no strong evidence that the countries (US, CA and UK) influence the conversion rate. 
